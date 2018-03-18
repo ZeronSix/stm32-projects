@@ -110,7 +110,6 @@ void EXTI0_1_IRQHandler(void) {
 void EXTI2_3_IRQHandler(void) {
     UpdateBtnState(BUTTON_ALARM_RESET);
 
-            LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_9);
     LL_EXTI_ClearFlag_0_31(LL_EXTI_LINE_2);
 }
 
